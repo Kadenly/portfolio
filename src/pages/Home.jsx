@@ -5,7 +5,7 @@ export default function Home(){
     return(
       <>
        <div className="page">
-          <Spring>Home</Spring>
+          <Spring>Hello!</Spring>
           <p>Where the heart is</p>
     </div>
 
