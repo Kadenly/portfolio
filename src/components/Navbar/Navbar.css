@@ -1,0 +1,81 @@
+.navbar{
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content:  space-between;
+    background: #fff;
+    padding: 15px 2.5%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 1000;
+    position:fixed;
+    top:0;
+    left: 0;
+}
+
+.logo{
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    text-align: left;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    line-height: 1.2;
+
+
+}
+
+ul{
+    flex:1;
+    list-style: none;
+    text-align: center;
+
+}
+
+ul li{
+    display: inline-block;
+    margin: 0px 50px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease;
+}
+
+ul li a:hover{
+    transform: scale(1.25);
+    text-shadow: 0 0 8px #7f48ffaa;
+    color:#000
+}
+
+ul li a.expanded {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+  color: #000;
+  font-size: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  transition: all 0.8s ease;
+}
+
+.close-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 2100;
+  background: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}

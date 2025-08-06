@@ -1,0 +1,11 @@
+.intro{
+    margin-left: auto;
+    margin-right: 50%;
+}
+
+.me{
+    border-radius: 50%;
+    width: 300px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
