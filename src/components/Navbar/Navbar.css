@@ -52,6 +52,11 @@ ul li a:hover{
     color:#000
 }
 
+ul li a::after{
+    height: 2px
+    
+}
+
 ul li a.expanded {
   position: fixed;
   top: 0;

@@ -1,6 +1,6 @@
 import Spring from '../components/Spring.jsx';
 import './Home.css'
-import me from '../assets/images/Me.JPEG'
+import me from '../assets/images/me.JPEG'
 export default function Home(){
     return(
       <>
