@@ -5,7 +5,11 @@ export default function Home(){
     return(
       <>
        <div className="page">
-          <Spring>Hello!</Spring>
+        <h1>
+          <Spring>Hi!</Spring>
+        </h1>
+
+          
           <p>Where the heart is</p>
     </div>
 
