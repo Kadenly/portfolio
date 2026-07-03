@@ -1,12 +1,9 @@
 import './ProjectCard.css'
 import AnimatedContent from './AnimatedContent'
 import { Link } from 'react-router-dom'
-import { Routes, Route } from 'react-router-dom'
-// import Jukebox from './pages/projectpages/Jukebox.jsx'
 
 export default function ProjectCard(props){
-    return (
-        <Link to={props.link}>
+    const card = (
         <AnimatedContent
                 distance={75}
                 direction="vertical"
@@ -20,15 +17,15 @@ export default function ProjectCard(props){
                 delay={0.1}
                 >
         <div className='main'>
-        
+
 
 
 
 
         <div className="projectCard">
-            
+
                     <div className ='cardBody'>
-            
+
                     {props.video ? (
           <video
             className="cardVideo"
@@ -48,12 +45,12 @@ export default function ProjectCard(props){
                 <h2 className='cardTitle'>{props.title}</h2>
                 <p className ='cardDescription'>{props.description}</p>
             </div>
-            
+
             </div>
-            
+
         </div>
 </AnimatedContent>
-
-</Link>
     )
+
+    return props.link ? <Link to={props.link}>{card}</Link> : card;
 }

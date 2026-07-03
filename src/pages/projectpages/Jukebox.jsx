@@ -1,7 +1,11 @@
-import React from "react";
+import BackButton from '../../components/BackButton.jsx';
+
 export default function Jukebox(){
-<div>
- <p>Helo World</p>
-    
-</div>
+  return (
+    <div className="page">
+      <BackButton />
+      <h1>Minecraft Jukebox</h1>
+      <p>A speaker.</p>
+    </div>
+  );
 }

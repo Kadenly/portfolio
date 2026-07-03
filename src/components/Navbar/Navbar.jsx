@@ -32,9 +32,6 @@ export default function Navbar(props){
                 <li><Link to="/projects">Projects</Link></li>
                 <li><Link to="/me">Me</Link></li>
             </ul>
-
-
-            <img src="" alt="" className='toggle-icon'/>
         </div>
     )
 }

@@ -34,7 +34,7 @@ const AnimatedContent = ({
       opacity: animateOpacity ? initialOpacity : 1,
     });
 
-    gsap.to(el, {
+    const tween = gsap.to(el, {
       [axis]: 0,
       scale: 1,
       opacity: 1,
@@ -51,8 +51,8 @@ const AnimatedContent = ({
     });
 
     return () => {
-      ScrollTrigger.getAll().forEach(t => t.kill());
-      gsap.killTweensOf(el);
+      tween.scrollTrigger?.kill();
+      tween.kill();
     };
   }, [
     distance,

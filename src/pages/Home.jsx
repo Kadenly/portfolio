@@ -5,12 +5,16 @@ export default function Home(){
     return(
       <>
        <div className="page">
-          <Spring>Hello!</Spring>
+        <h1>
+          <Spring>Hi!</Spring>
+        </h1>
+
+          
           <p>Where the heart is</p>
     </div>
 
     <div className='Body'>
-      <img className='me' src=''/>
+      <img className='me' src={me} alt="Kaden Ly"/>
       
       <p className='Intro'>
         Hello! My name is Kaden. I'm a mechanical engineering student at Worcester Polytechnic Institute.
