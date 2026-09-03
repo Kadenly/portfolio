@@ -2,7 +2,6 @@ import React from 'react'
 import './Navbar.css'
 import SplitText from '../SplitText.jsx'
 import { Link } from 'react-router-dom'
-import { useState } from 'react'
 
 
 export default function Navbar(props){
@@ -12,7 +11,8 @@ export default function Navbar(props){
     return(
         <div className='navbar'>
             <span className='logo'>
-                <SplitText
+                <img src="/signature.jpg" style={{height:'75px', width: 'auto'}} />
+                {/* <SplitText
                     text={props.title}
                     className="text-4x2 font-semibold text-center"
                     delay={100}
@@ -25,7 +25,7 @@ export default function Navbar(props){
                     rootMargin="-500px"
                     textAlign="center"
                     onLetterAnimationComplete={handleAnimationComplete}
-        />
+        /> */}
             </span>
             <ul>
                 <li><Link to="/">Home</Link></li>

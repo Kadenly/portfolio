@@ -1,0 +1,83 @@
+.page {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    line-height: 1.6;
+    position: relative;
+    font-family: 'Switzer', sans-serif;
+    font-size: 1.2rem;
+    
+}
+
+
+.page h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+}
+.pageImg {
+    display: flex;
+    max-width: 50%;
+    height: auto;
+    justify-content: center;
+    /* margin: 2rem ; */
+}
+
+.row {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    
+}
+
+/* * {
+    outline: 1px solid rgb(217, 208, 208);
+} */
+
+.floatImg{
+    float: right;
+    width: 35%;
+    height: auto;
+    margin: -5rem 1.5rem 1rem 2rem;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: right;
+}
+
+.page p{
+     text-indent: 2rem; 
+    margin-top: 2rem;}
+
+
+.imgPair {
+    display: flex;
+    gap: .5rem;
+    float: right;
+    margin: 1rem 1rem 1rem 1rem;
+    width: 50%;
+    align-items: flex-start;
+}
+
+.imgPair img {
+    flex: 1;
+    width:0;
+    object-fit: cover;
+}
+
+.cropTight {
+    max-width: 40%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.modelContainer {
+    width:40%;
+    aspect-ratio: 3/4;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    float: left;
+    clear: bottom;
+    
+}

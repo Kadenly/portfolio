@@ -9,3 +9,10 @@
     aspect-ratio: 1/1;
     object-fit: cover;
 }
+
+.Disclaimer{
+    font-style: italic;
+    color: #666;
+    font-size: 0.95rem;
+    max-width: 500px;
+}

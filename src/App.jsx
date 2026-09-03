@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './App.css'
 import Navbar from './components/Navbar/Navbar.jsx';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -10,23 +9,16 @@ import RedbullCanPage from './pages/projectpages/RedbullCan.jsx';
 import SplitflapPage from './pages/projectpages/Splitflap.jsx';
 import RoboticArmPage from './pages/projectpages/RoboticArm.jsx';
 import CheesesteakPage from './pages/projectpages/Cheesesteak.jsx';
-
-
-const handleAnimationComplete = () => {
-  console.log('All letters have animated!');
-};
+import ThreeTest from './pages/ThreeTest.jsx';
+import MagDistillerPage from './pages/projectpages/MagDistiller.jsx';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    
-   
     <Router>
       <Navbar title="Kaden Ly"/>
       <main className="main-content">
         <Routes>
-            <Route path="/" element={<Home/>}/>
+            <Route path="/" element={<Home />}/>
             <Route path="/projects" element={<Projects/>}/>
             <Route path="/me" element={<Me/>}/>
             <Route path="/Jukebox" element={<Jukebox/>}/>
@@ -34,11 +26,11 @@ function App() {
             <Route path="/Splitflap" element={<SplitflapPage/>}/>
             <Route path="/RoboticArm" element={<RoboticArmPage/>}/>
             <Route path="/Cheesesteak" element={<CheesesteakPage/>}/>
+            <Route path="/ThreeTest" element={<ThreeTest/>}/>
+            <Route path="/MagDistiller" element={<MagDistillerPage/>}/>
         </Routes>
-
       </main>
     </Router>
-       
   )
 }
 
